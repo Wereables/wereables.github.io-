@@ -22,7 +22,7 @@ body {
 
 /* Global background */
 .site-background {
-  background-color: #121212; /* Dark background for contrast */
+  background-image:linear-gradient(90deg, #7D6FFF, #06FFEA); /* Dark background for contrast */
   padding: 2%;
   display: flex;
   justify-content: center;
@@ -32,10 +32,15 @@ body {
 /* Site-card Style */
 .site-card {
   background-color: #252525;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 13px; /* Optional: rounded corners */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Elevation effect */
   overflow: hidden; /* Prevent content from spilling out */
   margin: auto;
+  background-image:  url("pattern.png") ;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 110% auto;
+  background-position-y: 115%;
 }
 
 
@@ -83,9 +88,8 @@ header, main, footer {
     grid-template-columns: auto 1fr;
     gap: 20px;
     padding: 1rem;
-    margin: auto;
+    margin: auto; 
     min-height: 600px;
-    
 }
 
 /* Logo Section */
@@ -167,7 +171,7 @@ header, main, footer {
   border-radius: 1rem;
   background: rgba(0, 200, 255, 0.3); /* Solid background with transparency */
   z-index: 1;
-  margin: auto;
+  margin: 0 auto;
   width: 98%;
 }
 
@@ -245,6 +249,7 @@ header, main, footer {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     letter-spacing: 0.13em;
+/*    margin-top: 10%;*/
 }
 
 /* Responsive Design */
