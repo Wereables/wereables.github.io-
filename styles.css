@@ -35,7 +35,7 @@ html, body {
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
     padding: 2rem;
-    min-height: 44vw;
+    min-height: 40vw;
 }
 
 .logo {
