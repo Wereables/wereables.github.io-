@@ -164,14 +164,25 @@ html, body {
   z-index: -1;
 }
 
+.support-headline {
+	color: #ffffff;
+}
+
 .support-button {
   padding: 1rem;
   border: none;
   border-radius: 2rem;
-  background: rgba(125, 111, 255, 1);
+  background: rgba(125, 111, 255, 0.5);
   color: white;
   cursor: pointer;
   font-size: clamp(0.8rem, 2vw, 1rem);
+  min-width: 250px;
+}
+
+.support-button:hover {
+	 color: #151515;
+	 background: linear-gradient(45deg, #06FFEA,#7D6FFF 100%);
+    border: 0.5px solid #06FFEA;
 }
 
 @media (max-width: 1024px) {
@@ -217,7 +228,7 @@ html, body {
 }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
 
 .header-tag {
 	display: none;
