@@ -1,61 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wereables - Evolving Technology</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="site-background">
-    <div class="site-card">
-    <div class="container">
-        <header class="header">
-            <div class="research-badge">PRIVACY & TRANSPARENCY</div>
-            <div class="research-badge">_[RESEARCH IN PROGRESS]_</div>
-        </header>
+/* Reset default margin/padding for body and html */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-        <div class="main-content">
-            <div class="logo-section">
-                <img src="_Logo.png" alt="logo of Wereables">
-            </div>
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212; /* Dark background for contrast */
+  color: #ffffff;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Fallback for older browsers */
+}
 
-            <section class="content-section">
-                <h2>PRIVACY & TRANSPARENCY:</h2>
-                <h3> Building a Trusted Digital Future</h3>
-                <div class="body_copy">We envision a world where privacy and transparency redefine how humans and technology coexist.</div>
-                <ul>
-                    <li>Pioneering software research to create a transparent, private, and secure internet.</li>
-                    <li>Empowering transformation through cutting-edge innovation.</li>
-                </ul>
+.body_copy {
+    color: #ffffff;
+}
 
-                <div class="principles-section">
-                    <div class="principles-title">GUIDING PRINCIPLES:</div>
-                    <div class="principles-container">
-                        <div class="principle">Privacy-First</div>
-                        <div class="principle">Radical Transparency</div>
-                        <div class="principle">Open-Source Innovation</div>
-                        <div class="principle">Community-Driven</div>
-                        <div class="principle">Human-Centric Design</div>
-                    </div>
-                </div>
-            </section>
-        </div>
+/* Global background */
+.site-background {
+  background-color: #121212; /* Dark background for contrast */
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-<!--        <section class="support-section">
-            <h3>Support Our Research</h3>
-            <div class="support-buttons">
-                <button class="support-button">❤️ DONATE</button>
-                <button class="support-button">☕ BUY US A COFFEE</button>
-            </div>
-        </section>-->
+/* Site-card Style */
+.site-card {
+  background-color: #252525;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Elevation effect */
+  overflow: hidden; /* Prevent content from spilling out */
+  margin: auto;
+}
 
-        <footer class="footer">
-            <div class="research-badge"> Designed with Transparency. Built for the Future. • © 2026 Wereables</div>
-        </footer>
-    </div>
-    </div>
-    </div>
-</body>
-</html>
+
+/* Ensure content respects card boundaries */
+header, main, footer {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.privacy-badge {
+    background-color: rgba(6, 255, 234, 0.1);
+    border: 1px solid rgba(6, 255, 234, 0.3);
+    border-radius: 13px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.13em;
+    color: #06FFEA;
+}
+
+.research-badge {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    letter-spacing: 0.13em;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    padding: 1rem;
+    margin: auto;
+    
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    width: auto;
+}
+
+/* Content Section Styles */
+.content-section {
+	 margin-left: 3rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #06FFEA;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.content-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Principles Section */
+.principles-section {
+    margin: 2rem 0;
+}
+
+.principles-title {
+    color: #06FFEA;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.principles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.principle {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(6, 255, 234, 0.3);
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Support-section */
+.support-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 200, 255, 0.3); /* Solid background with transparency */
+  z-index: 1;
+  margin: auto;
+  width: 98%;
+}
+
+/* Pseudo-element for gradient border */
+.support-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  padding: 2px; /* Controls border thickness */
+  background: linear-gradient(90deg, #7D6FFF, #06FFEA); /* Gradient border */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Optional: Style for buttons */
+.support-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.support-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  background: rgba(125, 111, 255, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.support-button:hover {
+  background: rgba(125, 111, 255, 0.9);
+}
+
+
+
+.support-section h3 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #ffffff;
+    flex: 21;
+}
+
+.support-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.support-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: #7D6FFF;
+    border: none;
+    border-radius: 25px;
+    color: #1E1E1E;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    letter-spacing: 0.13em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .support-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .support-buttons {
+        flex-direction: column;
+    }
+}
