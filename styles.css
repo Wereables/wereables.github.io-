@@ -128,6 +128,8 @@ html, body {
 .footer-text {
     font-size: clamp(0.8rem, 2vw, 1rem);
     color: #fff;
+    margin: auto;
+    padding-left: 1rem;
 }
 
 .support-banner {
