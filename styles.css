@@ -208,7 +208,7 @@ html, body {
         grid-column: 1 / span 1;
     }
     .footer-content {
-        grid-row: 4;
+        grid-row: 5;
         grid-column: 1 / span 1;
     }
     .logo {
